@@ -1,0 +1,17 @@
+.box input {
+    width: 23%;
+    padding: 100px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.but{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    top: -30px;
+    left: 570px;
+    border-radius: 3px;
+    border-color: black;
+}

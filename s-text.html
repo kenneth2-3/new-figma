@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/s-text.css">
+    <title>message</title>
+</head>
+<body>
+
+    <h1 class="header">Leave us a message </h1>
+
+    <div class="message-container" id="messageContainer"></div>
+
+        <input type="text" id="messageInput" placeholder="Type your message">
+        <button id="sendMessageButton">Send</button>
+
+        <script>
+            const messageContainer = document.getElementById("messageContainer");
+            const messageInput = document.getElementById("messageInput");
+            const sendMessageButton = document.getElementById("sendMessageButton");
+    
+            sendMessageButton.addEventListener("click", () => {
+            const messageText = messageInput.value;
+    
+            if (messageText) {
+            const messageElement = document.createElement("div");
+            messageElement.textContent = messageText;
+        
+            messageContainer.appendChild(messageElement);
+        
+            messageInput.value = "";
+        
+            }
+            });
+        </script>
+
+    <!-- <header>
+        <h1>My Messages</h1>
+    </header>
+    <main>
+        <div class="message-container">
+            Messages will be added here -->
+        <!-- </div>
+    </main>
+    <footer>
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <button id="send-button">Send</button>
+    </footer> --> 
+    <!-- <header>
+        <h1>Welcome to the Message Page</h1>
+    </header>
+    
+    <main>
+        <div class="message-container">
+            <div class="message received">
+                <p>Hi there! How can I help you?</p>
+            </div>
+    
+            <div class="message sent">
+                <p>Hi! You can ask a question about our website.</p>
+            </div>
+    
+            <div class="message sent">
+                <p>Hi! You can ask a question about our website.</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <button id="send-button">Send</button>
+    </footer> -->
+    
+
+</body>
+</html>

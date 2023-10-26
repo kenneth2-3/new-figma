@@ -1,0 +1,13 @@
+.linked{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 150px;
+    margin-right: 50px;
+
+    
+}
+.linked:hover{
+    color: brown;
+
+}
